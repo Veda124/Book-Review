@@ -6,7 +6,6 @@ const generateToken = (userId) => {
 }
 
 exports.signup = async (req, res) => {
-    console.log("📥 Signup route hit");
     try {
         const { name, email, password } = req.body;
 
@@ -34,8 +33,6 @@ exports.login = async (req, res) => {
 
         //compare passwords with bcrypt
         const isMatch = await bcrypt.compare(password, user.password);
-        console.log('password', password);
-        console.log('userExists.password', user.password);
         if (!isMatch) { return res.status(400).json({ message: 'Invalid user' }); }
 
         //jwt , but whats its purpose
