@@ -5,7 +5,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 
 router.post('/:id/review', authMiddleware, addReview); //id : book_id
 // router.get('/:id/reviews', getReviews);
-router.get('/:book_id/average-rating', getAverageRating);
+router.get('/:id/average-rating', getAverageRating);
 router.put('/:review_id/update-review', authMiddleware, updateReview);
 router.delete('/:review_id/reviews', authMiddleware, deleteReview);
 
