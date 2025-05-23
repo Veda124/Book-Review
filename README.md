@@ -6,10 +6,6 @@ nodemon server.js
 
 server starts at : http://localhost:3000
 
-Yes, that route list is very helpful for creating the Postman (or curl) example section in your `README.md`. Here's how to structure that part clearly and professionally:
-
----
-
 ## 🧪 API Endpoints & Example Requests
 
 ### 📘 User Authentication
