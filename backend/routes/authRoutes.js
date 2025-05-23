@@ -4,6 +4,5 @@ const router = express.Router();
 
 router.post('/signup', signup);
 router.post('/login', login);
-console.log("📡 Auth routes loaded");
 
 module.exports = router;
